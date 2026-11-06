@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "status": "synthetic_machine_proposed_development_material_not_human_gold",
+  "scope": "Process constraints for a future contrastive probe; no semantic accuracy claims.",
+  "cases": [
+    {
+      "id": "connected_context_and_symmetric_affiliation",
+      "events": [
+        {"id": "root", "parent": null, "post": "post-a", "tenant": "source-a", "actor": "focus", "minute": 0, "text": "The author received an award from an advocacy organisation."},
+        {"id": "reply", "parent": "root", "post": "post-a", "tenant": "source-a", "actor": "respondent", "minute": 4, "text": "Are you paid to post here?"},
+        {"id": "amplification", "parent": "reply", "post": "post-a", "tenant": "source-a", "actor": "third-party", "minute": 9, "text": "This shill probably works for free."},
+        {"id": "return", "parent": "reply", "post": "post-a", "tenant": "source-a", "actor": "focus", "minute": 300, "text": "How much does the opposing advocacy group pay you?"},
+        {"id": "unrelated", "parent": "root", "post": "post-b", "tenant": "source-b", "actor": "other", "minute": 5, "text": "A different source scope; do not attach this edge."}
+      ],
+      "user_explanation": "The later payment question mirrors the earlier one.",
+      "questions": ["Which paths preserve post and tenant identity?", "Which allegation precedes the mirrored response?", "Does an award alone establish payment?", "Can mirroring explain sequence without deciding civility?"]
+    },
+    {
+      "id": "public_audit_and_visibility",
+      "private_action_log_rows": 0,
+      "public_moderator_statement": "The revised article stays up; this sanction concerns accumulated conduct.",
+      "captures": [
+        {"body": "[deleted]", "author": "[deleted]", "authenticated": false, "derived_status": "deleted_by_user", "named_actor_evidence": null},
+        {"body": "[removed]", "author": "visible-account", "authenticated": true, "derived_status": "removed_by_mod", "named_actor_evidence": null},
+        {"body": "Still readable text", "author": "[deleted]", "authenticated": false, "derived_status": "live", "named_actor_evidence": null},
+        {"body": "[unavailable]", "author": null, "authenticated": true, "derived_status": "unavailable", "named_actor_evidence": null}
+      ],
+      "questions": ["What public evidence remains auditable?", "Which capture identifies a named human moderator?", "Why is author deletion different from body removal?", "What transport or account-visibility uncertainty remains?"]
+    },
+    {
+      "id": "support_exposure_and_aggregate_budget",
+      "focus_reply_threads": ["a", "b"],
+      "all_focus_participation_threads": ["a", "b", "c"],
+      "screening_hits": 24,
+      "semantic_reviews": 0,
+      "seed_selection": "negative-score accounts",
+      "prior_billed_gib": 40.48,
+      "approved_aggregate_gib": 200,
+      "next_estimated_gib": 170,
+      "unsettled_job_reserved_gib": 5,
+      "questions": ["Can the two supports be labelled matched?", "Are the 24 hits validated harassment?", "Can the selected cohort independently demonstrate voting bias?", "Does the next query fit the remaining aggregate reservation?"]
+    },
+    {
+      "id": "policy_memory_refresh_and_feedback",
+      "existing_repository": "BigQuerySubscriptionRepository",
+      "cache": {"kind": "existing_process_ttl", "ttl_elapsed": false},
+      "prior_policy": {"version": 3, "scope_source": "authenticated_context", "cadence_minutes": 30, "budget_gib": 20},
+      "proposed_policy": {"version": 4, "state": "proposal", "cadence_minutes": 5, "budget_gib": 30, "task": "full_reply_path_investigation", "priority": "higher"},
+      "approval": {"state": "not_approved"},
+      "authorization": {"expired": true},
+      "comparison_dimensions": ["coverage", "latency", "relevant_findings", "false_positives", "cost"],
+      "questions": ["Should an unexpired process TTL override expired authorization?", "Can a proposed policy become active without approval?", "Which existing cache/repository path should be inspected before adding a store?", "What evidence must be retained to compare the next policy with the previous version?"]
+    }
+  ]
+}

@@ -18,6 +18,11 @@ lessons in a per-domain library. Tasks within a domain run in order and read
 only earlier entries; different domains can run concurrently. Libraries are
 separated by benchmark, executor, mode, budget, and seed.
 
+Operator-owned warehouse investigations can retain an external process lesson via
+the [opt-in warehouse experience](WAREHOUSE-EXPERIENCE.md). It uses the same library
+and context mechanisms, but remains isolated from benchmark baselines and is not
+evidence of model training or measured quality improvement.
+
 | Option | Behavior |
 |---|---|
 | `--k 1` | One Propose–Probe–Compose step, followed by reflection after adoption |

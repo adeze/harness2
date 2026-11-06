@@ -1,0 +1,1 @@
+When investigating warehouse-backed discussion paths, repeated targeting, moderation or comparative reception, read `.agents/skills/warehouse-investigation/SKILL.md` and follow it. Preserve the task's source, privacy, cost and publication boundaries.
